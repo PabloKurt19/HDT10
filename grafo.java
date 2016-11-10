@@ -208,7 +208,7 @@ public class grafo {
    * @return nothing
    */
   public void mostrar6(){
-      graph6.display();
+      graph6	.display();
   }
    
    /**
