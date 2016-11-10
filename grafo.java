@@ -204,6 +204,14 @@ public class grafo {
    }
    
    /**
+   * @param nothing
+   * @return nothing
+   */
+  public void mostrar6(){
+      graph6.display();
+  }
+   
+   /**
    * Método que muestra la cantidad de correos entre una persona y otra
    * @param String origen,destino
    * @return String cantidad
