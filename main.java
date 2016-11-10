@@ -9,7 +9,12 @@ import javax.swing.JTextArea;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+/**
+ * @author Pablo Ortiz
+ * @author Pedro Garcia 
+ * @author Dieter de Wit
+ * @version 07.11.16
+ */
 public class main {
 
 	private JFrame frame;
@@ -44,6 +49,7 @@ public class main {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		mostrar objeto = new mostrar();
 		grafo dbgrafo = new grafo();
 		dbgrafo.crearGrafo();
 		frame = new JFrame();
@@ -54,7 +60,7 @@ public class main {
 		JButton btnNewButton = new JButton("Ver Grafo");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//Mostrar el grafo
+				objeto.visible();
 			}
 		});
 		btnNewButton.setBounds(49, 36, 130, 25);
@@ -147,7 +153,7 @@ public class main {
 		JButton btnNewButton_4 = new JButton("6 o m\u00E1s");
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//mostrar grafo de 6
+				dbgrafo.mostrar6();
 			}
 		});
 		btnNewButton_4.setBounds(49, 71, 130, 25);
